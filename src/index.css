@@ -1,0 +1,35 @@
+:root {
+  --bg-color: #0c1220;      /* Deep navy */
+  --surface-color: #182235; /* Card surfaces */
+  --surface-light: #22304a; /* Hover / active */
+  --text-color: #ffffff;
+  --text-muted: #b8c4e0;
+  --accent-color: #4c8fff;  /* iOS-like blue */
+  --danger-color: #ff5f6d;
+
+  --radius: 18px;
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+* {
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* Frosted glass effect */
+.frosted {
+  background: rgba(255, 255, 255, 0.08);  /* translucent */
+  backdrop-filter: blur(14px);              /* iOS blur */
+  -webkit-backdrop-filter: blur(14px);      /* Safari fix */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
